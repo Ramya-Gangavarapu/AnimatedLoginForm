@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Tangerine|Inconsolata|Droid+Sans ;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(BG.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+}   
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+.login-container {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+h2 {
+    font-size: 1.2em;
+    color:#ffffff;
+    text-align: center;
+}
+
+.input-container {
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+}
+.input-container label {
+    position: absolute;
+
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #fdfdfd;
+    pointer-events: none;
+    transition: 0.5s;
+    left: 50px; /* Adjust the left spacing as needed */
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+ 
+    font-size: 0.8rem; /* Adjust the font size for the smaller label */
+    color: #db23f0; /* Change the color on focus or valid input */
+}
+
+
+.input-container input {
+
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 45px 0 33px;
+
+}
+
+.input-container .icon {
+    position: absolute;
+    right: 30px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forget label input {
+    margin-right: 3px;
+}
+
+.remember-forget a {
+    color: rgb(224, 224, 230);
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(54, 23, 211);
+    font-weight: 500;
+}
+
+.register-link {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 360px) {
+    .login-container {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    
+    .input-container {
+        width: 290px;
+    }
+
+}
