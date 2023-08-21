@@ -1,5 +1,4 @@
 # Responsive Animated Login Form
-## Create an eye-catching and user-friendly login experience with our Responsive Animated Login Form project. This project showcases a modern and dynamic approach to user authentication through an animated login form that adapts seamlessly to various devices.
 
 # Project Overview
 The Responsive Animated Login Form project brings together design aesthetics and functionality to enhance user interactions during the authentication process. By leveraging responsive design principles and captivating animations, we aim to provide users with an engaging and intuitive login experience.
